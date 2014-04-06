@@ -1,0 +1,8 @@
+<% @posts.each do |p| %>
+  <h2><%= p.title %></h2>
+  <small>By: <%= p.user.full_name %> on <%= p.created_at %></small>
+  <br/><br/>
+  <p><%= p.body %></p>
+  <br/>
+  <small><%= link_to "View full article", p %> &middot; <%= p.comments.length %> comments</small>
+<% end %>

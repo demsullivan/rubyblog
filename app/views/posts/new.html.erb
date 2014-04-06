@@ -1,0 +1,6 @@
+<% @posts.each do |p| %>
+  <h2><%= p.title %></h2>
+  <small>By: <%= p.user.full_name %> on <%= p.created_on %></small>
+  <br/><br/>
+  <p><%= p.content %></p>
+<% end %>
